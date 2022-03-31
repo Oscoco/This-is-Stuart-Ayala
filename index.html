@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <title>Stuard</title>
 </head>
 <!-- Hey i'm Oscar Ordoñez frontend developer of the el salvador
@@ -33,16 +34,45 @@ and this page https://oscardev.ga/   -->
     <!-- main to content -->
     <main class="main">
         <div class="main_contents"></div>
-        <div class="main_img"></div>
+        <div class="main_img">
+            <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext button_ux">1 / 4</div>
+                  <img src="assets/img/001.jpeg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext button_ux">2 / 4</div>
+                  <img src="assets/img/002.jpeg" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext button_ux">3 / 4</div>
+                  <img src="assets/img/003.jpeg" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext button_ux">4 / 4</div>
+                  <img src="assets/img/004.jpeg" style="width:100%">
+                </div>
+              
+                <div class="creator-container button_ux">
+                  <p id="">Coded with 💙 by <a href="">oscardev.ga</a> </p>
+                  
+                </div>
+        
+              </div>
+        </div>
         <div class="main_move">
-            <a class="button_move"><i class="uil uil-arrow-left"></i></a>
+            <a class="button_move" onclick="plusSlides(1)">
+                <i class="uil uil-arrow-left"></i></a>
+
             <figure class="main_figure"></figure>
-            <a class="button_move button-move-right"><i class="uil uil-arrow-right"></i></a>
+
+            <a class="button_move button-move-right" onclick="plusSlides(-1)">
+                <i class="uil uil-arrow-right"></i></a>
         </div>
     </main>
-
-    
-    
 </body>
 <script src="assets/js/main.js"></script>
 </html>
