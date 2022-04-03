@@ -1,6 +1,29 @@
 /* Media telefonos  */
-@media screen and (min-width: 220px) and (max-width: 768px){
-    
+@media screen and (min-width: 220px){
+    .creator-container{
+        display: none;
+    }
+    /* header */
+    .header {
+        width: 90%;
+        align-items: flex-end;
+    }
+    .button_ux{
+        margin: 20px 20px 20px 20px;
+        right: 0;
+        
+    }
+
+    /* main */
+    .main_about {
+        margin: 80px 2px 70px 2px;
+    }
+
+
+
+
+
+
 }
 /* media telefonos y tabletas */
 @media screen and (min-width: 768px) and (max-width: 930px){

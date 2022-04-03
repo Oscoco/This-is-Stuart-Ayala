@@ -1,4 +1,3 @@
-
 // darkmode theme
 
 const bdark = document.querySelector('#bdark');
@@ -26,32 +25,28 @@ function store(value){
 }
 
 
-// SLIDESHOW
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+// saludo
+ 
+function mostrarSaludo(){
+ 
+  fecha = new Date(); 
+  hora = fecha.getHours();
+ 
+  if(hora >= 0 && hora < 12){
+    texto = "Good morning!";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+ 
+  if(hora >= 12 && hora < 18){
+    texto = " Good afternoon!";
+ 
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+ 
+  if(hora >= 18 && hora < 24){
+    texto = "Good night!";
+   
+  }
+ 
+
+  document.getElementById('txtsaludo').innerHTML = texto;
+ 
 }

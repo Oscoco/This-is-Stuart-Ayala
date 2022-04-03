@@ -4,75 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- styles. -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/media.css">
-    <title>Stuard</title>
+    <title>Stuart amaya</title>
 </head>
-<!-- Hey i'm Oscar Ordoñez frontend developer of the el salvador
-and this page https://oscardev.ga/   -->
-<body>
-    <!-- preloader -->
-<!-- <div id="image-wrapper-one"></div> 
-<div id="preloader-wrapper">
-<div id="preloader"></div>
-</div>  -->
-<!-- <a id="bdark">Tema negro</a> -->
-    <!-- preloader -->
-    <header class="header">
+<header class="header">
+    <div class="button_ux button_theme" id="bdark">
+        <i class="uil uil-moon"></i>
+    </div>
 
-        <div class="button_ux button_theme" id="bdark">
-            <i class="uil uil-moon"></i>
-        </div>
+    <!-- <div class="button_ux"> 
+        <i class="uil uil-english-to-chinese"></i>
+    </div> -->
+</header>
 
-        <div class="button_ux" id="bdark"> 
-            <i class="uil uil-english-to-chinese"></i>
-        </div>
-        
-        <!-- <div class="header_languaje">language</div> -->
-    </header>
-    <!-- main to content -->
-    <main class="main">
-        <div class="main_contents"></div>
-        <div class="main_img">
-            <div class="container">
-                <div class="mySlides">
-                  <div class="numbertext button_ux">1 / 4</div>
-                  <img src="assets/img/001.jpeg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext button_ux">2 / 4</div>
-                  <img src="assets/img/002.jpeg" style="width:100%">
-                </div>
-              
-                <div class="mySlides">
-                  <div class="numbertext button_ux">3 / 4</div>
-                  <img src="assets/img/003.jpeg" style="width:100%">
-                </div>
-                  
-                <div class="mySlides">
-                  <div class="numbertext button_ux">4 / 4</div>
-                  <img src="assets/img/004.jpeg" style="width:100%">
-                </div>
-              
-                <div class="creator-container button_ux">
-                  <p id="">Coded with 💙 by <a href="">oscardev.ga</a> </p>
-                  
-                </div>
-        
-              </div>
-        </div>
-        <div class="main_move">
-            <a class="button_move" onclick="plusSlides(1)">
-                <i class="uil uil-arrow-left"></i></a>
-
-            <figure class="main_figure"></figure>
-
-            <a class="button_move button-move-right" onclick="plusSlides(-1)">
-                <i class="uil uil-arrow-right"></i></a>
+<body onload="mostrarSaludo()">
+    <main class="main_container">
+        <section class="main_about">
+            <!-- <div class="">About me</div> -->
+            <div class="main_hi" >
+                <div data-lang="main_hi" id="saludo"><div id="txtsaludo"></div></div><!-- saludo temporal  -->
+            </div>
+            <div class="main_name">Hi, I'm Stuart.</div>
+            <div class="main_more">These are my networks follow me and know about me</div>
+            <div class="main_social">
+                <a class="social_items item-facebook"><i class="uil uil-facebook"></i>
+                    <span class="tooltiptext">My Social</span></a>
+                <a class="social_items" href="https://www.instagram.com/stuart__r/"><i class="uil uil-instagram"></i>
+                    <span class="tooltiptext">My Photos</span></a>
+                <a class="social_items" href="https://api.whatsapp.com/send?phone=121212"><i class="uil uil-whatsapp"></i>
+                    <span class="tooltiptext">My Number</span></a>
+            </div>
+        </section>
+        <!-- img -->
+        <div class="main_image">
+          <img class="img_responsive" src="assets/img/001.jpeg" alt="" srcset="">
+          <div class="content_resume">
+              <h1 class="title_me main_name">
+                  About me
+              </h1>
+              I always say what I feel, I keep it simple and I'm always wide awake.
+              <!-- Siempre digo lo que siento, Lo hago simple y siempre estoy bien despierto -->
+          </div>
         </div>
     </main>
+<!-- footer -->
+<footer>
+    <div class="footer_creator">
+        <p>Coded with by&nbsp; <i class="uil uil-heart ico">&nbsp;</i><a class="ico" href="https://oscardev.ga/"> Oscardev.ga&nbsp;&nbsp;</a></p>
+    </div>
+</footer>
 </body>
 <script src="assets/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 </html>
