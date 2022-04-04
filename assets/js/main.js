@@ -37,16 +37,14 @@ function mostrarSaludo(){
   }
  
   if(hora >= 12 && hora < 18){
-    texto = " Good afternoon!";
+    texto = "Good afternoon!";
  
   }
  
   if(hora >= 18 && hora < 24){
     texto = "Good night!";
-   
   }
  
-
   document.getElementById('txtsaludo').innerHTML = texto;
  
 }

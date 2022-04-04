@@ -6,31 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- styles. -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <!-- ico -->
+    <link rel="icon" href="assets/img/fire.svg">
     <title>Stuart amaya</title>
 </head>
-<header class="header">
-    <div class="button_ux button_theme" id="bdark">
+<header class="header animate__animated animate__fadeInRightBig animate__delay-1s">
+    <div class="button_ux" id="bdark">
         <i class="uil uil-moon"></i>
     </div>
-
-    <!-- <div class="button_ux"> 
-        <i class="uil uil-english-to-chinese"></i>
-    </div> -->
 </header>
 
 <body onload="mostrarSaludo()">
     <main class="main_container">
         <section class="main_about">
-            <!-- <div class="">About me</div> -->
-            <div class="main_hi" >
-                <div data-lang="main_hi" id="saludo"><div id="txtsaludo"></div></div><!-- saludo temporal  -->
+            <div class="main_hi animate__animated animate__fadeInLeft animate__delay-1s">
+                <div id="saludo"><div id="txtsaludo"></div></div><!-- saludo temporal Por dia tambie noche -->
             </div>
-            <div class="main_name">Hi, I'm Stuart.</div>
-            <div class="main_more">These are my networks follow me and know about me</div>
-            <div class="main_social">
+            <div class="main_name animate__animated animate__fadeInLeft animate__delay-2s">Hi, I'm Stuart.</div>
+            <div class="main_more animate__animated animate__fadeInLeft animate__delay-2s">These are my networks follow me and know about me</div>
+            <div class="main_social animate__animated animate__fadeInLeft animate__delay-3s">
                 <a class="social_items item-facebook"><i class="uil uil-facebook"></i>
                     <span class="tooltiptext">My Social</span></a>
                 <a class="social_items" href="https://www.instagram.com/stuart__r/"><i class="uil uil-instagram"></i>
@@ -40,8 +39,21 @@
             </div>
         </section>
         <!-- img -->
-        <div class="main_image">
-          <img class="img_responsive" src="assets/img/001.jpeg" alt="" srcset="">
+        <div class="main_image animate__animated animate__fadeInLeft animate__delay-2s" id="slider">
+          <div class="slider-contenedor">
+            <div id="slider">
+                <figure>
+                <img class="img_responsive" src="assets/img/001.jpeg" alt="">
+                <img class="img_responsive" src="assets/img/002.jpeg" alt="">
+                <img class="img_responsive" src="assets/img/003.jpeg" alt="">
+                <img class="img_responsive a" src="assets/img/004.jpeg" alt="">
+                </figure>
+            </div>
+            </div>
+
+
+
+
           <div class="content_resume">
               <h1 class="title_me main_name">
                   About me
@@ -53,11 +65,11 @@
     </main>
 <!-- footer -->
 <footer>
-    <div class="footer_creator">
-        <p>Coded with by&nbsp; <i class="uil uil-heart ico">&nbsp;</i><a class="ico" href="https://oscardev.ga/"> Oscardev.ga&nbsp;&nbsp;</a></p>
+    <div class="footer_creator animate__animated animate__fadeInUp animate__delay-1s">
+        <p>Coded with by&nbsp; <i class="uil uil-heart ico">&nbsp;</i><a class="ico creatoar_name" href="https://oscardev.ga/"> Oscardev.ga&nbsp;&nbsp;</a></p>
     </div>
 </footer>
 </body>
 <script src="assets/js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
 </html>

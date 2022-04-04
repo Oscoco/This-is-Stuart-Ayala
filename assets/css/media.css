@@ -1,5 +1,5 @@
 /* Media telefonos  */
-@media screen and (min-width: 220px){
+@media screen and (min-width: 220px) and (max-width: 500px){
     .creator-container{
         display: none;
     }
@@ -11,26 +11,32 @@
     .button_ux{
         margin: 20px 20px 20px 20px;
         right: 0;
-        
     }
-
     /* main */
-    .main_about {
-        margin: 80px 2px 70px 2px;
+    .main_container {
+        margin: 5px auto;
     }
-
-
-
-
-
-
+    .main_about {
+        margin: 80px 2px 2px 2px;
+    }
+    /* img resume */
+    .content_resume{
+        font-size: 0.9rem;
+        padding: 1.2rem;
+        top: 55%;
+    }
+    .slider-contenedor{
+        width: 100%;
+    }
+    .title_me{
+        padding-bottom: 5px;
+        font-size: 1.3rem;
+    }
+    .footer_creator{
+        margin: 0px 0px 20px 0px;
+        font-size: auto;
+        justify-content: center;
+    }
 }
-/* media telefonos y tabletas */
-@media screen and (min-width: 768px) and (max-width: 930px){
-    
-}
-
-
 /* Stuard website shows a bit of him and his social media */
-
 /* this-is-Stuart-Ayala */
