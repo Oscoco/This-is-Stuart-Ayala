@@ -70,7 +70,7 @@ body.darkmode {
 
 /* header bottons */
 .header {
-  width: 90%;
+  width: 85%;
   height: auto;
   position: fixed;
   display: flex;
@@ -220,6 +220,7 @@ body.darkmode {
   position: absolute;
   width: auto;
   padding: 3rem;
+  margin-right: 5px;
   box-shadow: var(--shadow-contents);
   top: 55%;
   left: 50px;
@@ -314,7 +315,7 @@ div#slider figure {
   color: var(--creator-heart);
 }
 .creatoar_name {
-  color: var(--first-color);
+  color: var(--creator-heart);
   --s: 0.1em;
   --c: var(--creator-heart);
   padding-bottom: var(--s);
